@@ -1,6 +1,6 @@
 // vika
 .travelprogram {
-  background-image: url(//src/img/benefits-roads-background.png);
+  background-image: url(../img/benefits-roads-background.png);
   background-color: rgba(1, 10, 32, 1);
   background-size: cover;
   background-position: center;
@@ -13,7 +13,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .travelprogram {
-    background-image: url(./img/benefits-roads-background@2x.png);
+    background-image: url(../img/benefits-roads-background@2x.png);
   }
 }
 @media (min-device-pixel-ratio: 2),
@@ -21,7 +21,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .travelprogram {
-    background-image: url(./img/benefits-roads-background@2x.webp);
+    background-image: url(../img/benefits-roads-background@2x.webp);
   }
 }
 .travelprogram__image {
