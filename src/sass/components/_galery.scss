@@ -1,41 +1,45 @@
 // vasya
-.main-galery{
-    color: #010A20;
-    font-family: DM Sans, sans-serif;
-    font-size: 50px;
-    text-align: center;
+.galery{
     padding-top: 160px;
-}
-.text-main-galery{
-    color: #6F7787;
-    font-family: DM Sans, sans-serif;
-    font-weight: 100;
-    text-align: center;
-    padding-top: 35px;
-}
-.photo-galery-one, .photo-galery-two{
-    height: 370px;
-    width: 370px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-}
-.photo-galery-three, .photo-galery-six{
-    height: 530px;
-    width: 370px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-}
-.photo-galery-four, .photo-galery-five{
-    height: 210px;
-    width: 370px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-}
-.photo-div{
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 70px;
+
+    &__title{
+        color: #010A20;
+        font-family: DM Sans, sans-serif;
+        font-size: 50px;
+        text-align: center;
+    }
+    &__text{
+        color: #6F7787;
+        font-family: DM Sans, sans-serif;
+        font-weight: 100;
+        text-align: center;
+        margin-top: 35px;
+    }
+    &__photo-one, &__photo-two{
+        height: 370px;
+        width: 370px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    &__photo-three, &__photo-six{
+        height: 530px;
+        width: 370px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    &__photo-four, &__photo-five{
+        height: 210px;
+        width: 370px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    &__photo-div{
+        display: flex;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 70px;
+    }
+    
 }
