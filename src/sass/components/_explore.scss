@@ -62,9 +62,14 @@
   letter-spacing: 0.03em;
   text-align: center;
   color: $subtitle-color;
-  margin-bottom: 226px;
 }
 .explore__list-second{
     display: flex;
     justify-content: space-between;
+}
+.explore__overlay{
+      background-color: #020C21;
+    opacity: 0.9;
+  paddind-bottom: 226px;
+  padding-top: 201px;
 }
