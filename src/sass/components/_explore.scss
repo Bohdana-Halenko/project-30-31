@@ -1,6 +1,6 @@
 // vlad
 .explore {
-  background-image: url(../../img/image-fon.png);
+  background-image: url('../img/image-fon.png');
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2),
@@ -8,7 +8,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .explore {
-    background-image: url(../../img/image-fon@2x.png);
+    background-image: url('../img/image-fon@2x.png');
   }
 }
 .explore__title {
