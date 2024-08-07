@@ -88,7 +88,7 @@
         margin-left: 70px;
         height: 170px;
     }
-    &__blok-ul{
+    &__blok-box{
         margin-top: 97px;
     }
     &__blok-item{
@@ -120,6 +120,11 @@
         font-family: DM Sans, sans-serif;
         font-size: 15px;
         margin-top: 25px;
+    }
+    &__figure{
+        display: inline-block;
+        transform: rotate(-180deg);
+        writing-mode: vertical-rl;
     }
     &__list{
         margin-top: 240px;
