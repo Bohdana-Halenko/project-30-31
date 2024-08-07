@@ -30,6 +30,10 @@
   width: 380px;
   height: 257px;
 }
+.explore__img::before{
+  content: '';
+  background-image: url(../../img/symbol-defs.svg/icon-dundruff)
+}
 .explore__title-second {
   font-weight: 700;
   font-size: 60px;
@@ -65,7 +69,7 @@
 }
 .explore__list-second{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .explore__overlay{
       background-color: #020C21;
