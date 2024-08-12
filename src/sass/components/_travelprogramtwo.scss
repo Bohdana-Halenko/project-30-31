@@ -1,12 +1,15 @@
 // vika
+.container {
+  width: 100%;
+}
 .travelprogramsecond {
   background-image: url('../img/benefits-beaches-background.png');
   background-color: rgba(1, 10, 32, 1);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 207px;
-  padding-bottom: 97px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -26,34 +29,38 @@
 }
 .travelprogramsecond__image {
   display: block;
-  width: 630px;
-  height: 460px;
+  width: 362px;
+  height: auto;
   cursor: pointer;
   transition-property: transform;
   transition-duration: 3000ms;
+  text-align: center;
+  margin: 0 auto;
 }
-.travelprogramsecond__image:hover{
-  transform: scale(1.1);
+.travelprogramsecond__image:hover {
+  transform: scale(0.9);
 }
 .travelprogram__second {
+  position: relative;
+  padding-bottom: 100px;
   display: flex;
-  gap: 130px;
-  align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .travelprogramsecond__title {
+  margin-top: 34px;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 40px;
   font-family: 'DM Sans', sans-serif;
   color: $main-text-color;
 }
 .travelprogramsecond__text {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'DM Sans', sans-serif;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   color: $second-subtitle-color;
-  margin-top: 26px;
+  margin-top: 29px;
   line-height: 28px;
 }
 .travelprogramsecond__btn {
@@ -61,16 +68,13 @@
   color: $main-text-color;
   border-radius: 32px;
   border: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-right: 41px;
-  padding-left: 41px;
+  padding: 22px 108px;
   font-weight: 700;
   font-size: 18px;
   font-family: 'DM Sans', sans-serif;
   margin-top: 32px;
   cursor: pointer;
-  transition-duration: box-shadow;
+  transition-property: box-shadow;
   transition-duration: 600ms;
 }
 .travelprogramsecond__btn:hover {
@@ -78,3 +82,147 @@
     inset 0 0 0 transparent, inset 0 0 0 transparent,
     0 0 20px rgb(189, 188, 188);
 }
+@media screen and (min-width: 768px) {
+  .travelprogramsecond {
+    padding-top: 207px;
+    padding-bottom: 120px;
+  }
+  .travelprogramsecond__image {
+    display: block;
+    width: 630px;
+    height: 460px;
+  }
+  .travelprogramsecond__image:hover {
+    transform: scale(1.1);
+  }
+  .travelprogram__second {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .travelprogramsecond__title {
+    margin-top: 0;
+    font-size: 42px;
+  }
+  .travelprogramsecond__text {
+    font-size: 18px;
+    margin-top: 26px;
+  }
+  .travelprogramsecond__btn {
+    width: fit-content;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    padding: 22px 105px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .travelprogramsecond {
+    padding-top: 207px;
+    padding-bottom: 97px;
+  }
+  .travelprogram__second {
+    gap: 130px;
+  }
+  .travelprogramsecond__image {
+    width: 630px;
+    height: 460px;
+  }
+  .travelprogramsecond__btn {
+    padding: 16px 41px;
+    position: static;
+    margin-top: 0;
+    left: 0;
+    margin-top: 32px;
+  }
+}
+
+
+
+
+
+
+
+// .travelprogramsecond {
+//   background-image: url('../img/benefits-beaches-background.png');
+//   background-color: rgba(1, 10, 32, 1);
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   padding-top: 207px;
+//   padding-bottom: 97px;
+// }
+// @media (min-device-pixel-ratio: 2),
+//   (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .travelprogramsecond {
+//     background-image: url('../img/benefits-beaches-background@2x.png');
+//   }
+// }
+// @media (min-device-pixel-ratio: 2),
+//   (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .travelprogramsecond {
+//     background-image: url('../img/benefits-beaches-background@2x.webp');
+//   }
+// }
+// .travelprogramsecond__image {
+//   display: block;
+//   width: 630px;
+//   height: 460px;
+//   cursor: pointer;
+//   transition-property: transform;
+//   transition-duration: 3000ms;
+// }
+// .travelprogramsecond__image:hover{
+//   transform: scale(1.1);
+// }
+// .travelprogram__second {
+//   display: flex;
+//   gap: 130px;
+//   align-items: center;
+//   flex-direction: row-reverse;
+// }
+// .travelprogramsecond__title {
+//   font-weight: 700;
+//   font-size: 42px;
+//   font-family: 'DM Sans', sans-serif;
+//   color: $main-text-color;
+// }
+// .travelprogramsecond__text {
+//   font-weight: 400;
+//   font-size: 18px;
+//   font-family: 'DM Sans', sans-serif;
+//   letter-spacing: 0.01em;
+//   color: $second-subtitle-color;
+//   margin-top: 26px;
+//   line-height: 28px;
+// }
+// .travelprogramsecond__btn {
+//   background-color: $btn-color;
+//   color: $main-text-color;
+//   border-radius: 32px;
+//   border: none;
+//   padding-top: 16px;
+//   padding-bottom: 16px;
+//   padding-right: 41px;
+//   padding-left: 41px;
+//   font-weight: 700;
+//   font-size: 18px;
+//   font-family: 'DM Sans', sans-serif;
+//   margin-top: 32px;
+//   cursor: pointer;
+//   transition-duration: box-shadow;
+//   transition-duration: 600ms;
+// }
+// .travelprogramsecond__btn:hover {
+//   box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent,
+//     inset 0 0 0 transparent, inset 0 0 0 transparent,
+//     0 0 20px rgb(189, 188, 188);
+// }
