@@ -18,20 +18,14 @@
     &__photo-one, &__photo-two{
         height: 370px;
         width: 370px;
-        margin-bottom: 30px;
-        margin-right: 30px;
     }
     &__photo-three, &__photo-six{
         height: 530px;
         width: 370px;
-        margin-bottom: 30px;
-        margin-right: 30px;
     }
     &__photo-four, &__photo-five{
         height: 210px;
         width: 370px;
-        margin-bottom: 30px;
-        margin-right: 30px;
     }
     &__photo-div{
         display: flex;
@@ -40,6 +34,10 @@
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 70px;
+        width: 1170px;
+        height: 770px;
+        margin: none;
     }
+
     
 }
