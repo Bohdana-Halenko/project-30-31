@@ -1,7 +1,8 @@
 // vasya
 .galery{
     padding-top: 160px;
-
+    margin-bottom: 230px;
+    
     &__title{
         color: #010A20;
         font-family: DM Sans, sans-serif;
@@ -15,28 +16,17 @@
         text-align: center;
         margin-top: 35px;
     }
-    &__photo-one, &__photo-two{
-        height: 370px;
-        width: 370px;
-    }
-    &__photo-three, &__photo-six{
-        height: 530px;
-        width: 370px;
-    }
-    &__photo-four, &__photo-five{
-        height: 210px;
-        width: 370px;
-    }
-    &__photo-div{
+    &__photo{
         display: flex;
-        max-width: 100%;
-        height: auto;
-        justify-content: center;
+        gap: 30px;
         flex-wrap: wrap;
         margin-top: 70px;
-        width: 1170px;
-        height: 770px;
-        margin: none;
+    }
+    &__item:nth-child(5){
+        margin-top: -320px;
+    }
+    &__item:nth-child(6){
+        margin-top: -160px;
     }
 
     

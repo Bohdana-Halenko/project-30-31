@@ -7,14 +7,15 @@
     
     &__header{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+
     }
     &__logo{
         width: 185px;
         height: 68px;
-        margin-right: 64px;
         cursor: pointer;
+
     }
     &__navigation{
         text-transform: uppercase;
@@ -22,7 +23,7 @@
         font-size: 14px;
         color: #fff;
         display: flex;
-        margin-right: 300px;
+        gap: 62px;
     }
     &__navigation_item{
         margin: 30px;
@@ -30,7 +31,6 @@
     }
     &__icon{
         width: 24px;
-        margin: 5px;
         cursor: pointer;
     }
     &__stem{
@@ -81,22 +81,21 @@
     &__blok-text{
         color: #939393;
         font-family: DM Sans, sans-serif;
-        font-size: 15px;
+        font-size: 12px;
     }
     &__blok-one{
         background-color: #0000009f;
         display: flex;
         justify-content: center;
-        // margin-left: 70px;
-        height: 170px;
+        padding-top: 41px;
+        padding-bottom: 49px;
+        padding-left: 70px;
+        padding-right: 70px;
+        gap: 70px;
+        margin-left: 140px;
     }
     &__blok-box{
-        margin-top: 97px;
-    }
-    &__blok-item{
-        margin-right: 190px;
-        margin-top: 45px;
-        margin-bottom: 45px;
+        margin-top: 110px;
     }
     &__blok{
         display: flex;
@@ -130,11 +129,12 @@
     }
     &__list{
         margin-top: 240px;
+        margin-bottom: 20px;
     }
     &__box{
-        display: block;
+        display: flex;
     }
-    &____hero-box{
+    &____main-box{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -145,5 +145,10 @@
     @keyframes flip {
         0%, 100% { transform: rotateX(0); }
         50% { transform: rotateX(-180deg); }
+    }
+    &__item-blok{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
