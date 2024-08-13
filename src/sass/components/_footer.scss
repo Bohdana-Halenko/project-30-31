@@ -1,11 +1,84 @@
 footer {
     background-color: $explore-title-color ;
+
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 39px;
+    padding-bottom: 38px;
+}
+
+.logo__footer {
+    width: 150px;
+    height: 60px;
+}
+
+.footer__help-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__help {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+
+}
+
+.footer__help-item {
+    text-align: center;
+    margin-top: 36px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social {
+    width: 116px;
+    height: 24px;
+    margin-top: 36px;
+    margin-bottom:36px ;
+}
+
+.footer__copyright {
+    width: 158px;
+    height: 28px;
     
 }
-.footer__container{
+
+@media screen and (min-width:768px) {
+.footer__links{
+    flex-direction: row;
+}
+.footer__copyright{
+    margin-left: 20px;
+}
+.footer__help-list{
+    flex-direction: row;
+
+}
+.footer__help-item{
+    margin-left: 10px;
+}
+}
+
+@media screen and (min-width:1200px) {
+.footer__container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     padding-top: 39px;
     padding-bottom: 38px;
 }
@@ -27,50 +100,27 @@ footer {
     line-height: 156%;
     letter-spacing: 0.03em;
     color: $main-text-color;
-    
+
 }
-.footer__help-item{
+
+.footer__help-item {
     margin-right: 36px;
+    margin-top: 0;
 }
-.footer__links{
+
+.footer__links {
     display: flex;
     margin-left: 350px;
 }
-.footer__social{
+
+.footer__social {
     width: 116px;
     height: 24px;
 }
-.footer__copyright{
-width: 158px;
-height: 28px;
-margin-left: 10px;
+
+.footer__copyright {
+    width: 158px;
+    height: 28px;
+    margin-left: 10px;
 }
-@media screen and (min-width:768px) {
-    .footer__container{
-        flex-direction: column;
-        
-    }
-    .footer__help-list{
-        flex-direction: column;
-        text-align: center;
-        margin-left: 0;
-    }
-    .footer__links{
-        margin-left: 0;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-    .footer__help-item{
-        margin-right: 0;
-        margin-top: 36px;
-    }
-    .footer__social{
-        margin-top: 36px;
-        margin-bottom: 36px;
-    }
-}
-@media screen and (min-width:1200px) {
-    
 }
