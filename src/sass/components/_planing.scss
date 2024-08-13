@@ -1,48 +1,93 @@
 // vika
 .planing {
-    background-color: rgba(220, 232, 242, 1);
+  background-color: rgba(220, 232, 242, 1);
+  padding-top: 29px;
+  padding-bottom: 32px;
+}
+.planing__main-title {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 40px;
+}
+.planing__number {
+  display: inline-block;
+  padding: 15px 22px 15px 22px;
+  background-color: $btn-color;
+  border-radius: 50%;
+  font-size: 26px;
+  font-weight: 500;
+  color: $main-text-color;
+  cursor: pointer;
+  transition-property: transform, background-color, border-radius;
+  transition-duration: 5000ms;
+}
+.planing__number:hover {
+  transform: rotate(360deg);
+  background-color: rgba(252, 40, 75, 0.855);
+  border-radius: 3px;
+}
+.planing__second-title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 26px; 
+}
+.planing__dox-motorbike {
+  margin-top: 32px;
+}
+.planing__image {
+  display: inline-block;
+  border-radius: 7px;
+  vertical-align: middle;
+  transition-property: transform;
+  transition-duration: 3000ms;
+  cursor: pointer;
+}
+.planing__image:hover {
+  transform: scale(1.2);
+}
+.planing__info-motorbike {
+  display: inline-block;
+  margin-left: 45px;
+  vertical-align: middle;
+}
+.planing__text {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(21, 20, 57, 0.4);
+  margin-top: 18px;
+  margin-bottom: 32px;
+}
+.planing__btn{
+  display: none;
+}
+.planing__dox{
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .planing {
     padding-top: 113px;
     padding-bottom: 117px;
   }
   .planing__main-title {
-    font-weight: 700;
     font-size: 60px;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 50px;
-  }
-  .planing__number {
-    display: inline-block;
-    padding: 15px 22px 15px 22px;
-    background-color: $btn-color;
-    border-radius: 50%;
-    font-size: 26px;
-    font-weight: 500;
-    color: $main-text-color;
+    margin-left: 0;
   }
   .planing__second-title {
-    font-weight: 700;
     font-size: 26px;
+    margin-top: 0;
   }
-  .planing__div-motorbike{
-      margin-top: 94px;
+  .planing__dox-motorbike {
+    margin-top: 94px;
   }
-  .planing__image{
-      display: inline-block;
-      border-radius: 7px;
-      width: 249px;
-      height: 165px;
-      vertical-align: middle;
+  .planing__image {
+    width: 249px;
+    height: 165px;
   }
-  .planing__info-motorbike{
-      display: inline-block;
-      margin-left: 45px;
-      vertical-align: middle;
-  }
-  .planing__text {
-    font-weight: 400;
+  .planing__text{
     font-size: 23px;
-    color: rgba(21, 20, 57, 0.4);
-    margin-top: 27px;
+    margin-bottom: 0;
   }
   .planing__btn {
     background-color: $btn-color;
@@ -54,23 +99,131 @@
     font-size: 18px;
     margin-left: 74px;
     cursor: pointer;
+    transition-duration: box-shadow;
+    transition-duration: 600ms;
   }
-  .planing__number{
-      display: inline-block;
-      width: 60px;
-      vertical-align: top;
-      position: relative;
-      z-index: 1;
+  .planing__btn:hover {
+    box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent,
+      inset 0 0 0 transparent, inset 0 0 0 transparent,
+      0 0 20px rgb(102, 102, 102);
   }
-  .planing__info{
-      display: inline-block;
-      vertical-align: top;
-      padding-left: 44px;
-      padding-bottom: 94px;
-      margin-top: 17px;
-      border-left: 2px solid rgba(21, 20, 57, 0.4);
-      margin-left: -35px;
-  }
-  .planing__div:last-child .planing__info {
-      border-left: none;
-  }
+  // .planing__main-title{
+  //   margin-top: 50px;
+  // }
+  .planing__number {
+  display: inline-block;
+  width: 60px;
+  vertical-align: top;
+  position: relative;
+  z-index: 1;
+}
+.planing__info {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 44px;
+  padding-bottom: 94px;
+  margin-top: 17px;
+  border-left: 2px solid rgba(21, 20, 57, 0.4);
+  margin-left: -35px;
+}
+.planing__dox:last-child .planing__info {
+  border-left: none;
+}
+}
+
+// .planing {
+//   background-color: rgba(220, 232, 242, 1);
+//   padding-top: 113px;
+//   padding-bottom: 117px;
+// }
+// .planing__main-title {
+//   font-weight: 700;
+//   font-size: 60px;
+//   font-family: 'Roboto', sans-serif;
+//   margin-bottom: 50px;
+// }
+// .planing__number {
+//   display: inline-block;
+//   padding: 15px 22px 15px 22px;
+//   background-color: $btn-color;
+//   border-radius: 50%;
+//   font-size: 26px;
+//   font-weight: 500;
+//   color: $main-text-color;
+//   cursor: pointer;
+//   transition-property: transform, background-color, border-radius;
+//   transition-duration: 5000ms;
+// }
+// .planing__number:hover {
+//   transform: rotate(360deg);
+//   background-color: rgba(252, 40, 75, 0.855);
+//   border-radius: 3px;
+// }
+// .planing__second-title {
+//   font-weight: 700;
+//   font-size: 26px;
+// }
+// .planing__dox-motorbike {
+//   margin-top: 94px;
+// }
+// .planing__image {
+//   display: inline-block;
+//   border-radius: 7px;
+//   width: 249px;
+//   height: 165px;
+//   vertical-align: middle;
+//   transition-property: transform;
+//   transition-duration: 3000ms;
+//   cursor: pointer;
+// }
+// .planing__image:hover {
+//   transform: scale(1.2);
+// }
+// .planing__info-motorbike {
+//   display: inline-block;
+//   margin-left: 45px;
+//   vertical-align: middle;
+// }
+// .planing__text {
+//   font-weight: 400;
+//   font-size: 23px;
+//   color: rgba(21, 20, 57, 0.4);
+//   margin-top: 27px;
+// }
+// .planing__btn {
+//   background-color: $btn-color;
+//   color: $main-text-color;
+//   border-radius: 32px;
+//   border: none;
+//   padding: 16px 41px;
+//   font-weight: 700;
+//   font-size: 18px;
+//   margin-left: 74px;
+//   cursor: pointer;
+//   transition-duration: box-shadow;
+//   transition-duration: 600ms;
+// }
+// .planing__btn:hover {
+//   box-shadow: inset 0 0 0 transparent, inset 0 0 0 transparent,
+//     inset 0 0 0 transparent, inset 0 0 0 transparent,
+//     0 0 20px rgb(102, 102, 102);
+// }
+// .planing__number {
+//   display: inline-block;
+//   width: 60px;
+//   vertical-align: top;
+//   position: relative;
+//   z-index: 1;
+// }
+// .planing__info {
+//   display: inline-block;
+//   vertical-align: top;
+//   padding-left: 44px;
+//   padding-bottom: 94px;
+//   margin-top: 17px;
+//   border-left: 2px solid rgba(21, 20, 57, 0.4);
+//   margin-left: -35px;
+// }
+// .planing__dox:last-child .planing__info {
+//   border-left: none;
+// }
