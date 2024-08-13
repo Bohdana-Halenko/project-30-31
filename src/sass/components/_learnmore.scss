@@ -1,44 +1,68 @@
 // vlad
-.learnmore{
-    position: relative;
-    border: 1px solid lightgray;
-    padding-bottom: 133px;
+.learnmore {
+  border: 1px solid lightgray;
+  padding-bottom: 116px;
 }
 .learnmore__title {
   font-weight: 700;
-  font-size: 42px;
-  line-height: 119%;
+  font-size: 40px;
+  line-height: 115%;
   text-align: center;
-  margin-bottom: 32px;
-  padding-top: 200px;
+  padding-top: 135px;
+  margin-bottom: 36px;
 }
 .learnmore__text {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 156%;
+  font-size: 16px;
+  line-height: 150%;
   letter-spacing: 0.03em;
   text-align: center;
   color: $subtitle-color;
-  margin-bottom: 36px;
+  margin-bottom: 41px;
 }
 .learnmore__button {
   border-radius: 122px;
   padding: 16px 24px;
-  width: 210px;
-  height: 64px;
+  width: 314px;
+  height: 73px;
   background-color: $btn-color;
   border: none;
   color: $main-text-color;
   display: block;
   margin: 0 auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 100px;
+  cursor: pointer;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+.learnmore__button:hover,
+.learnmore__button:focus{
+  background-color: rgb(171, 36, 36);
 }
 .learnmore__img{
-    position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 .learnmore__image{
-    position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
+    z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .learnmore__title {
+    font-size: 42px;
+    line-height: 119%;
+  }
+  .learnmore__text {
+    font-size: 18px;
+    line-height: 156%;
+  }
+  .learnmore__button {
+    width: 210px;
+  }
 }
