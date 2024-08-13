@@ -2,6 +2,10 @@
 .learnmore {
   border: 1px solid lightgray;
   padding-bottom: 116px;
+  background-image: url(../../img/img-learn-two.png), url(../../img/img-learn.png);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position:bottom right, top left;
 }
 .learnmore__title {
   font-weight: 700;
@@ -35,7 +39,7 @@
   line-height: 150%;
   margin-bottom: 100px;
   cursor: pointer;
-  transition-property: background;
+  transition-property: backgroundButton;
   transition-duration: 250ms;
   transition-timing-function: ease;
 }
@@ -43,17 +47,20 @@
 .learnmore__button:focus{
   background-color: rgb(171, 36, 36);
 }
-.learnmore__img{
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-.learnmore__image{
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
+// .learnmore__img{
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+// }
+// .learnmore__image{
+//     bottom: 0;
+//     right: 0;
+//     z-index: -1;
+// }
 @media screen and (min-width: 768px) {
+  .learnmore{
+    background-size: 1400px;
+  }
   .learnmore__title {
     font-size: 42px;
     line-height: 119%;
@@ -64,5 +71,10 @@
   }
   .learnmore__button {
     width: 210px;
+  }
+}
+@media screen and (min-width:1200px){
+  .learnmore{
+    background-size: 1610px;
   }
 }
