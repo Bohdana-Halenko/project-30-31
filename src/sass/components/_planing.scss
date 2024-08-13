@@ -9,9 +9,12 @@
   font-size: 40px;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 40px;
+  text-align: center;
 }
 .planing__number {
-  display: inline-block;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
   padding: 15px 22px 15px 22px;
   background-color: $btn-color;
   border-radius: 50%;
@@ -30,7 +33,7 @@
 .planing__second-title {
   font-weight: 700;
   font-size: 22px;
-  margin-top: 26px; 
+  margin-top: 26px;
 }
 .planing__dox-motorbike {
   margin-top: 32px;
@@ -58,14 +61,14 @@
   margin-top: 18px;
   margin-bottom: 32px;
 }
-.planing__btn{
+.planing__btn {
   display: none;
 }
-.planing__dox{
+.planing__dox {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .planing {
     padding-top: 113px;
     padding-bottom: 117px;
@@ -85,7 +88,7 @@
     width: 249px;
     height: 165px;
   }
-  .planing__text{
+  .planing__text {
     font-size: 23px;
     margin-bottom: 0;
   }
@@ -107,28 +110,37 @@
       inset 0 0 0 transparent, inset 0 0 0 transparent,
       0 0 20px rgb(102, 102, 102);
   }
-  // .planing__main-title{
-  //   margin-top: 50px;
-  // }
+  .planing__info {
+    border-left: none;
+  }
   .planing__number {
-  display: inline-block;
-  width: 60px;
-  vertical-align: top;
-  position: relative;
-  z-index: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
-.planing__info {
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 44px;
-  padding-bottom: 94px;
-  margin-top: 17px;
-  border-left: 2px solid rgba(21, 20, 57, 0.4);
-  margin-left: -35px;
-}
-.planing__dox:last-child .planing__info {
-  border-left: none;
-}
+@media screen and (min-width: 1200px) {
+  .planing__number {
+    display: inline-block;
+    width: 60px;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .planing__info {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 44px;
+    padding-bottom: 94px;
+    margin-top: 17px;
+    border-left: 2px solid rgba(21, 20, 57, 0.4);
+    margin-left: -35px;
+  }
+  .planing__dox:last-child .planing__info {
+    border-left: none;
+  }
 }
 
 // .planing {
