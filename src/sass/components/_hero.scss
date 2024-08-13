@@ -1,8 +1,10 @@
 // vasya
 .hero{
     background-image: url('../img/fon.png');
-    height: 100%;
-    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
     &__header{
         display: flex;
         justify-content: center;
