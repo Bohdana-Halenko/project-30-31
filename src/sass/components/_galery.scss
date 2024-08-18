@@ -29,5 +29,20 @@
         margin-top: -160px;
     }
 
-    
+    @media(max-width: 1200px){
+        &__photo{
+            width: 100%;
+        }
+        &__item{
+            width: 100%;
+        }
+        &__item:nth-child(5){
+            margin-top: 0px;
+        }
+        &__item:nth-child(6){
+            margin-top: 0px;
+        }
+    }
+    @media(max-width: 768px){
+    }
 }
