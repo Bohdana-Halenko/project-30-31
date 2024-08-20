@@ -1,11 +1,18 @@
-// vlad
 .learnmore {
   border: 1px solid lightgray;
   padding-bottom: 116px;
-  background-image: url(../../img/img-learn-two.png), url(../../img/img-learn.png);
+  background-image: url(./img/img-learn-two.png), url(./img/img-learn.png);
   background-size: 800px;
   background-repeat: no-repeat;
   background-position:bottom right, top left;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .learnmore {
+    background-image: url(./img/img-learn-two@2x.png), url(./img/img-learn@2x.png);
+  }
 }
 .learnmore__title {
   font-weight: 700;
@@ -47,16 +54,6 @@
 .learnmore__button:focus{
   background-color: rgb(171, 36, 36);
 }
-// .learnmore__img{
-//     top: 0;
-//     left: 0;
-//     z-index: -1;
-// }
-// .learnmore__image{
-//     bottom: 0;
-//     right: 0;
-//     z-index: -1;
-// }
 @media screen and (min-width: 768px) {
   .learnmore{
     background-size: 1400px;
